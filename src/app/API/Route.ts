@@ -1,4 +1,5 @@
-import { ITask } from "./types/tasks";
+import { NextResponse } from "next/server";
+import { ITask } from "../../../types/tasks";
 
 const baseUrl = 'http://localhost:3001';
 
