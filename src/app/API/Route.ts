@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import { ITask } from "../../../types/tasks";
 
-const baseUrl = 'http://localhost:3001';
+const baseUrl = process.env.BaseUrl;
 
 export const getAllTodos = async (): Promise<ITask[]> => {
   const res = await fetch(`${baseUrl}/tasks`,{ cache: 'no-store' });
